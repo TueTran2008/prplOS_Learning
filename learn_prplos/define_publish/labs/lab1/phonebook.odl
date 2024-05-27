@@ -1,0 +1,15 @@
+%define {
+	object "PhoneBook"{
+		object "Contact"[]{
+			string "FirstName";
+			string "LastName";
+		}
+		object "PhoneNumber"[]{
+			string "PhoneNumber";
+		}
+		object "E-mail"[]
+		{
+			string "Email";
+		}
+	}
+}

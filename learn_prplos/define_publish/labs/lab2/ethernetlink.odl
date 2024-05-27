@@ -1,0 +1,31 @@
+%define {
+    object Ethernet {
+        uint32 LinkNumberOfEntries;
+            object Link[] {
+                bool Enable;
+                string Status;
+                string Alias;
+                string Name;
+                uint32 LastChange;
+                string MACAddress;
+                csv_string LowerLayers;
+                bool PriorityTagging;
+                object Stats {
+                    uint64 BytesReceived;
+                    uint64 PacketsSent;
+                    uint64 PacketsReceived;
+                    uint32 ErrorsSent;
+                    uint32 ErrorsReceived;
+                    uint64 UnicastPacketsSent;
+                    uint64 UnicastPacketsReceived;
+                    uint32 DiscardPacketsSent;
+                    uint32 DiscardPacketsReceived;
+                    uint32 MulticastPacketsSent;
+                    uint32 MulticastPacketReceived;
+                    uint64 BroadcastPacketsSent;
+                    uint64 BroadcastPacketsReceived;
+                    uint32 UnknownProtoPacketsReceived;
+                }
+            }
+    }
+}
